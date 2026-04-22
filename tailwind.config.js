@@ -1,0 +1,79 @@
+import defaultTheme from 'tailwindcss/defaultTheme';
+import forms from '@tailwindcss/forms';
+
+/** @type {import('tailwindcss').Config} */
+export default {
+    content: [
+        './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
+        './storage/framework/views/*.php',
+        './resources/views/**/*.blade.php',
+        './resources/js/**/*.jsx',
+    ],
+
+    theme: {
+        extend: {
+            colors: {
+                "on-primary-fixed": "#0f2000",
+                "on-secondary": "#ffffff",
+                "surface-container-lowest": "#ffffff",
+                "primary-fixed": "#bdf285",
+                "primary-container": "#538121",
+                "surface-container-low": "#fff1ea",
+                "outline-variant": "#c3c9b6",
+                "surface-tint": "#3e6a08",
+                "surface-container": "#ffeade",
+                "on-secondary-container": "#795d1b",
+                "on-primary-container": "#f9ffeb",
+                "surface-variant": "#ffdcc6",
+                "error-container": "#ffdad6",
+                "tertiary": "#ad2b1f",
+                "on-primary": "#ffffff",
+                "on-primary-fixed-variant": "#2c5000",
+                "on-tertiary": "#ffffff",
+                "secondary": "#765a19",
+                "tertiary-container": "#cf4434",
+                "on-secondary-fixed": "#261a00",
+                "on-background": "#301401",
+                "surface-dim": "#ffd1b4",
+                "on-surface": "#301401",
+                "on-secondary-fixed-variant": "#5c4300",
+                "surface": "#fff8f5",
+                "on-surface-variant": "#43493a",
+                "tertiary-fixed": "#ffdad5",
+                "primary-fixed-dim": "#a2d66c",
+                "on-tertiary-fixed": "#410000",
+                "primary": "#3c6704",
+                "background": "#fff8f5",
+                "on-error-container": "#93000a",
+                "on-tertiary-fixed-variant": "#8e130c",
+                "on-error": "#ffffff",
+                "secondary-container": "#ffd88a",
+                "inverse-on-surface": "#ffede4",
+                "secondary-fixed-dim": "#e7c276",
+                "surface-container-highest": "#ffdcc6",
+                "error": "#ba1a1a",
+                "tertiary-fixed-dim": "#ffb4a9",
+                "secondary-fixed": "#ffdea0",
+                "outline": "#737969",
+                "surface-bright": "#fff8f5",
+                "surface-container-high": "#ffe3d2",
+                "inverse-surface": "#492811",
+                "on-tertiary-container": "#fffbff",
+                "inverse-primary": "#a2d66c"
+            },
+            borderRadius: {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            fontFamily: {
+                headline: ["Newsreader", ...defaultTheme.fontFamily.serif],
+                body: ["Be Vietnam Pro", ...defaultTheme.fontFamily.sans],
+                label: ["Be Vietnam Pro", ...defaultTheme.fontFamily.sans],
+            },
+        },
+    },
+
+    plugins: [forms],
+};
