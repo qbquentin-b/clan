@@ -1,0 +1,1 @@
+database/migrations/2026_04_21_085820_create_claims_table.php
